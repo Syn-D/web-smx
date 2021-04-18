@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background-color: #fff;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    width: 100%;
+    color: #030303;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-w {
+    width: 100%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wa {
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+}
+
+.wa img {
+    width: 64px;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.wa img:hover {
+    background-color: #074473;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 700px;
+    background: #002fff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 100%, 20%, 0.39), hsla(0, 100%, 20%, 0.39)), url(/img/portada.jpeg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 20%, 0.39), hsla(0, 100%, 20%, 0.39)), url(/img/portada.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+
+.box-menu {
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.contenedor-menu {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.contenedor-menu picture img {
+    width: 150px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.contenedor-menu picture img:hover {
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu>a {
+    color: #000;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu>a:hover {
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-menu .icon-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.textos-header {
+    display: flex;
+    width: 100%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #030303;
+}
+
+.textos-header p {
+    margin: 5px;
+}
+
+.box-logo img {
+    width: 150px;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 250;
+    color: #033030;
+    margin-bottom: 25px;
+}
+
+.layer {
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 45px;
+    margin-top: 15px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Servicios */
+#servicios {
+    width: 100%;
+}
+
+.sec-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-video {
+    width: 560px;
+    height: 314px;
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    width: 560px;
+    height: 314px;
+}
+
+.video:hover {
+    box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*  GALERIA */
+#galeria {
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 100%, 20%, 0), hsla(0, 100%, 20%, 0)), url(/img/bg.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 20%, 0), hsla(0, 100%, 20%, 0)), url(/img/bg.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+.box-photos {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-img img {
+    width: 360px;
+    height: 240px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+}
+
+/*  SERVICIOS   */
+#servicios {
+    border-radius: 5px 5px 0 0;
+    margin-top: 30px;
+    width: 100%;
+    background: #002fff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 100%, 20%, 0.39), hsla(0, 100%, 20%, 0.39)), url(/img/portada.jpeg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 20%, 0.39), hsla(0, 100%, 20%, 0.39)), url(/img/portada.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+
+.titulo-ser{
+    background-color: #030303a9;
+    width: 15%;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    border-radius: 15px 15px 0 0;
+    margin-top: 30px;
+}
+
+.box-servicio {
+    width: 90%;
+    margin: auto;
+    background-color: #030303a9;
+    border-radius: 15%;
+    color: #fff;
+}
+
+.item-servicios {
+padding: 10px;
+}
+
+.eventos {
+    text-align: center;
+}
+
+.eventos p{
+    width: 95%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.item-card {
+    width: 15%;
+    background-color: #030303a9;
+    border-radius: 0 0 15px 15px;
+}
+
+.txt-card {
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.wa-card {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.wa-card a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+}
+
+.wa-card p {
+    width: 60%;
+}
+
+.wa-card img{
+    width: 34px;
+}
+/* CONTACTO */
+#contacto {
+    width: 100%;
+    background-color: #030303;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon img {
+    width: 96px;
+    transition: 0.5s;
+    border-radius: 40%;
+}
+
+.icon img:hover {
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.3);
+}
+
+.icon span {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon-2 {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-2 img {
+    width: 96px;
+    transition: 0.5s;
+    border-radius: 40%;
+}
+
+.icon-2 img:hover {
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.3);
+}
+
+.icon-2 span {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gps {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gps iframe {
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #030303;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+    .galeria {
+        justify-content: center;
+    }
+
+    .imagen-port {
+        width: 90%;
+    }
+
+    .imagen-port-2 {
+        width: 90%;
+    }
+
+    .box-video {
+        width: 426px;
+        height: 240px;
+    }
+
+    .video {
+        width: 100%;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .contenedor-menu .icon-menu {
+        display: block;
+        z-index: 700;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        background-color: #fff;
+        width: 90%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu a {
+        width: 100%;
+        margin: 5px 0 5px 0;
+    }
+
+    .icon-menu {
+        filter: invert(10) sepia(0);
+    }
+
+    .titulo-ser {
+        width: 35%;
+    }
+
+    .item-card {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .imagen-port {
+        width: 95%;
+    }
+
+    .imagen-port-2 {
+        width: 95%;
+    }
+
+    video {
+        width: 95%;
+    }
+
+}
